@@ -1,6 +1,7 @@
 clear
 close all
 clc
+tic;
 %% Load data
 %  noFault-----------------------------------------
 Full = load("data\noFault\Full\Result.mat");
@@ -169,6 +170,8 @@ for i = 1:r4
     human4_error(:,:,i) = human4_test;
 end
 
+elapsed_time = toc;
+disp(['运行时间：', num2str(elapsed_time), ' 秒']);
 %% plot
 
 % % x方向

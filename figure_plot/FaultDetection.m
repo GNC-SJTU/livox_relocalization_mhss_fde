@@ -1,6 +1,7 @@
 clear
 close all
 clc
+tic;
 %% Load data
 %  noFault-----------------------------------------
 Full = load("data\noFault\Full\Result.mat");
@@ -169,12 +170,14 @@ for i = 1:r4
     human4_error(:,:,i) = human4_test;
 end
 
+elapsed_time = toc;
+disp(['运行时间：', num2str(elapsed_time), ' 秒']);
 %% plot
 % 1
 figure
 t = tiledlayout('vertical','TileSpacing','loose');
 nexttile;
-title(t,'Normalized Test Statistic under Fault Mode 1','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistic under Fault Mode (b)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:6
     bar(r2*(i-1)+1:r2*i,abs(human2(:,1,i))/5/std_error(i,1));
     % 在每组数据的中间下方添加标签
@@ -272,7 +275,7 @@ set(gca,'XTickLabels','');
 set(gca,'xtick',[])
 
 lgd.Layout.Tile = 'east';
-title(t,'Normalized Test Statistic under Fault Mode 2','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistic under Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 %xlabel(t,'实验')
 %% 3
 figure
@@ -322,5 +325,5 @@ ylabel('z direction' ,'FontName','Aria','FontSize',10,'FontWeight','bold')
 set(gca,'xtick',[])
 
 lgd.Layout.Tile = 'east';
-title(t,'Normalized Test Statistic under Fault Mode 3','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistic under Fault Mode (d)','FontName','Aria','FontSize',16,'FontWeight','bold')
 %xlabel(t,'实验')

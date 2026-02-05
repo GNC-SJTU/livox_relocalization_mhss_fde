@@ -132,7 +132,7 @@ figure
 t = tiledlayout('vertical','TileSpacing','loose');
 
 nexttile;
-title(t,'Normalized Test Statistics without ① (Fault Mode: 2)','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistics without ① for Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:5
     bar(rNo0*(i-1)+1:rNo0*i,abs(human20No0(:,1,i))/4/std_errorNo0(i,1));
     % 在每组数据的中间下方添加标签
@@ -195,7 +195,7 @@ std_errorNo10(5,:) = std_error(6,:);
 figure
 t = tiledlayout('vertical','TileSpacing','loose');
 nexttile;
-title(t,'Normalized Test Statistics without ② (Fault Mode: 2)','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistics without ② for Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:5
     bar(rNo10*(i-1)+1:rNo10*i,abs(human20No10(:,1,i))/4/std_errorNo10(i,1));
     % 在每组数据的中间下方添加标签
@@ -270,7 +270,7 @@ std_errorNo20(5,:) = std_error(6,:);
 figure
 t = tiledlayout('vertical','TileSpacing','loose');
 nexttile;
-title(t,'Normalized Test Statistics without ③ (Fault Mode: 2)','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistics without ③ for Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:5
     bar(rNo20*(i-1)+1:rNo20*i,abs(human20No20(:,1,i))/4/std_errorNo20(i,1));
     % 在每组数据的中间下方添加标签
@@ -345,7 +345,7 @@ std_errorNo30(5,:) = std_error(6,:);
 figure
 t = tiledlayout('vertical','TileSpacing','loose');
 nexttile;
-title(t,'Normalized Test Statistics without ④ (Fault Mode: 2)','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistics without ④ for Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:5
     bar(rNo30*(i-1)+1:rNo30*i,abs(human20No30(:,1,i))/4/std_errorNo30(i,1));
     % 在每组数据的中间下方添加标签
@@ -420,7 +420,7 @@ std_errorNo40(5,:) = std_error(6,:);
 figure
 t = tiledlayout('vertical','TileSpacing','loose');
 nexttile;
-title(t,'Normalized Test Statistics without ⑤ (Fault Mode: 2)','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistics without ⑤ for Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:5 
     bar(rNo40*(i-1)+1:rNo40*i,abs(human20No40(:,1,i))/4/std_errorNo40(i,1));
     % 在每组数据的中间下方添加标签
@@ -495,7 +495,7 @@ std_errorNo50(5,:) = std_error(5,:);
 figure
 t = tiledlayout('vertical','TileSpacing','loose');
 nexttile;
-title(t,'Normalized Test Statistics without ⑥ (Fault Mode: 2)','FontName','Aria','FontSize',16,'FontWeight','bold')
+title(t,'Normalized Test Statistics without ⑥ for Fault Mode (c)','FontName','Aria','FontSize',16,'FontWeight','bold')
 for i = 1:5
     bar(rNo50*(i-1)+1:rNo50*i,abs(human20No50(:,1,i))/4/std_errorNo50(i,1));
     % 在每组数据的中间下方添加标签
