@@ -1,0 +1,24 @@
+# ROS / catkin generated files
+build/
+devel/
+install/
+log/
+csv/
+las/
+lvx/
+
+# Catkin workspace metadata
+.catkin_tools/
+.catkin_workspace
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary archives and logs
+*.log
+*.tmp
+*.bak
